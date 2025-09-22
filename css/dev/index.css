@@ -660,6 +660,7 @@ body {
   border-radius: 1.25rem;
   overflow: hidden;
   margin-top: -0.9375rem;
+  max-width: 37.5rem;
 }
 .preview__video iframe {
   aspect-ratio: 16/9;
@@ -1425,6 +1426,11 @@ body {
   display: grid;
   row-gap: 1.25rem;
 }
+@media (max-width: 29.99875em) {
+  .preview__video {
+    max-width: 20.625rem;
+  }
+}
 @media (max-width: 22.5em) {
   .hero__text {
     max-width: 12.0625rem;
@@ -1455,9 +1461,6 @@ body {
   }
   .i-help__title {
     font-size: 1.5rem;
-  }
-  .preview__video {
-    max-width: 20.625rem;
   }
   .guarantee__title {
     font-size: 5.25rem;
@@ -1497,9 +1500,6 @@ body {
   .i-help__title {
     font-size: clamp( 1.5rem , 1.27941176470625rem  +  0.9803921569vw , 1.75rem );
   }
-  .preview__video {
-    max-width: clamp( 20.625rem , 5.73529411765rem  +  66.1764705882vw , 37.5rem );
-  }
   .guarantee__title {
     font-size: clamp( 5.25rem , 4.97426470588125rem  +  1.2254901961vw , 5.5625rem );
   }
@@ -1537,9 +1537,6 @@ body {
   }
   .i-help__title {
     font-size: 1.75rem;
-  }
-  .preview__video {
-    max-width: 37.5rem;
   }
   .guarantee__title {
     font-size: 5.5625rem;
