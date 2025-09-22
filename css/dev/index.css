@@ -447,7 +447,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 50;
-  max-width: 17.5rem;
+  width: 17.5rem;
   margin: 0 auto;
 }
 
@@ -531,6 +531,7 @@ body {
 .author__img-bg img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .author__box {
   position: relative;
@@ -657,13 +658,12 @@ body {
 }
 .preview__video {
   margin: -0.9375rem auto 0 auto;
-  border-radius: 1.25rem;
-  overflow: hidden;
   margin-top: -0.9375rem;
   max-width: 37.5rem;
 }
 .preview__video iframe {
   aspect-ratio: 16/9;
+  border-radius: 1.25rem;
 }
 .preview__subtitle {
   padding-top: 10rem;
