@@ -531,7 +531,7 @@ body {
 .author__img-bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .author__box {
   position: relative;
@@ -656,9 +656,14 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.preview__video {
-  margin: -0.9375rem auto 0 auto;
+.preview__wrapper-video {
+  display: flex;
+  justify-content: center;
   margin-top: -0.9375rem;
+  width: 100%;
+}
+.preview__video {
+  width: 100%;
   max-width: 37.5rem;
 }
 .preview__video iframe {
