@@ -537,6 +537,8 @@ body {
   position: absolute;
   top: 0;
   right: 8.125rem;
+  right: 8.125rem;
+  height: 115%;
 }
 .author__img-bg img {
   width: 100%;
@@ -1477,6 +1479,11 @@ body {
   display: grid;
   row-gap: 1.25rem;
 }
+@media (max-width: 34.375em) {
+  .author__img-bg {
+    right: -1.25rem;
+  }
+}
 @media (max-width: 29.99875em) {
   .author__img-bg {
     right: -5rem;
@@ -1500,9 +1507,6 @@ body {
   }
   .guide-hero__text-bold {
     font-size: 0.8125rem;
-  }
-  .author__img-bg {
-    height: 31.875rem;
   }
   .author__text {
     max-width: 11.5625rem;
@@ -1542,9 +1546,6 @@ body {
   .guide-hero__text-bold {
     font-size: clamp( 0.8125rem , 0.757352941175rem  +  0.2450980392vw , 0.875rem );
   }
-  .author__img-bg {
-    height: clamp( 21.875rem , 40.6985294117625rem  +  -39.2156862745vw , 31.875rem );
-  }
   .author__text {
     max-width: clamp( 11.5625rem , -0.29411764705625rem  +  52.6960784314vw , 25rem );
   }
@@ -1582,9 +1583,6 @@ body {
   }
   .guide-hero__text-bold {
     font-size: 0.875rem;
-  }
-  .author__img-bg {
-    height: 21.875rem;
   }
   .author__text {
     max-width: 25rem;
