@@ -378,16 +378,18 @@ body {
 }
 .hero__title::before {
   content: "";
+  display: block;
   position: absolute;
-  top: -3rem;
+  top: -3.125rem;
   left: -3.3125rem;
   width: 4.8125rem;
   height: 4.1875rem;
   background: url(../assets/img/flower-decor.png) 0 0 no-repeat;
-  rotate: -21.1deg;
+  background-size: contain;
+  transform: rotate(-30deg);
 }
 .hero__title span {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   column-gap: 0.3125rem;
   color: #3b5a4f;
