@@ -1802,6 +1802,11 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+@media (max-width: 31.25em) {
+  .preview__container::before {
+    display: none;
+  }
+}
 @media (max-width: 29.99875em) {
   .author__img-bg {
     right: -5rem;
