@@ -496,6 +496,17 @@
 .author__container {
   position: relative;
 }
+.author__container::before {
+  content: "";
+  position: absolute;
+  top: -22%;
+  right: -80%;
+  width: 200%;
+  height: 200%;
+  background: url(../assets/img/circle.png) 0 0 no-repeat;
+  background-size: contain;
+  mix-blend-mode: screen;
+}
 .author__img-bg {
   position: absolute;
   top: 0;
@@ -685,22 +696,23 @@
 }
 .preview__container {
   position: relative;
+  z-index: 5;
 }
 .preview__container::before {
   content: "";
   position: absolute;
-  z-index: 0;
-  top: -3.75rem;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  z-index: 5;
+  top: -1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24.5625rem;
+  height: 21.1875rem;
   background: url(../assets/img/preview/decor-leaves.png) 0 0 no-repeat;
   background-size: contain;
-  display: none;
 }
 .preview__title {
   position: relative;
-  z-index: 5;
+  z-index: 10;
   font-family: "Garamond";
   font-weight: 400;
   font-size: 2.875rem;
@@ -717,7 +729,7 @@
 }
 .preview__wrapper-video {
   position: relative;
-  z-index: 5;
+  z-index: 10;
   display: flex;
   justify-content: center;
   margin-top: 0.5rem;
@@ -729,6 +741,18 @@
 .preview__wrapper-video.--watcher-view {
   opacity: 1;
   transform: translateY(0);
+}
+.preview__wrapper-video::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: url(../assets/img/preview/decor-leaves.png) 0 0 no-repeat;
+  background-size: contain;
+  display: none;
 }
 .preview__video {
   position: relative;
@@ -747,19 +771,6 @@
 }
 .preview__box {
   position: relative;
-}
-.preview__box::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 2;
-  background: url(../assets/img/preview/decor.png) 0 0 no-repeat;
-  background-size: contain;
-  width: 250%;
-  height: 100%;
-  top: 0;
-}
-.preview__box {
   opacity: 0;
   transform: translateY(1.25rem);
   transition: transform 0.8s, opacity 0.8s;
@@ -770,7 +781,7 @@
 }
 .preview__subtitle {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   padding-top: 10rem;
   padding-bottom: 8.75rem;
   max-width: 14.375rem;
@@ -782,6 +793,19 @@
   font-size: 1.375rem;
   line-height: 1.3;
   text-transform: uppercase;
+}
+.preview__decor {
+  position: absolute;
+  z-index: 3;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24.4375rem;
+  height: 26rem;
+}
+.preview__decor img {
+  width: 100%;
+  height: 100%;
 }
 
 .program-of-course {
@@ -1805,9 +1829,6 @@
   .i-help__title {
     font-size: 1.5rem;
   }
-  .preview__box::before {
-    left: -2.8125rem;
-  }
   .guarantee__title {
     font-size: 5.25rem;
   }
@@ -1849,9 +1870,6 @@
   .i-help__title {
     font-size: clamp( 1.5rem , 1.27941176470625rem  +  0.9803921569vw , 1.75rem );
   }
-  .preview__box::before {
-    left: clamp( -2.8125rem , -13.84191176470625rem  +  49.0196078431vw , 9.6875rem );
-  }
   .guarantee__title {
     font-size: clamp( 5.25rem , 4.97426470588125rem  +  1.2254901961vw , 5.5625rem );
   }
@@ -1892,9 +1910,6 @@
   }
   .i-help__title {
     font-size: 1.75rem;
-  }
-  .preview__box::before {
-    left: 9.6875rem;
   }
   .guarantee__title {
     font-size: 5.5625rem;
