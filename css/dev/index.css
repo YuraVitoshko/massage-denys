@@ -13,7 +13,7 @@
 
 .spollers__item {
   padding: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #fff;
   border-radius: 1.25rem;
   opacity: 0;
   transform: translateY(1.25rem);
@@ -170,7 +170,7 @@
   height: 0.875rem;
   background: url(../assets/img/icons/onn.svg) 0 0 no-repeat;
   background-size: contain;
-  transform: translateY(-0.125rem);
+  transform: translateY(-0.0625rem);
 }
 .hero__places {
   flex: 0 0 6.5625rem;
@@ -329,7 +329,7 @@
   border-radius: 0.9375rem;
   padding: 0.9375rem;
   padding-left: 2.8125rem;
-  background-color: rgb(255, 254, 252);
+  background-color: #fff;
   position: relative;
   z-index: 5;
 }
@@ -465,7 +465,7 @@
 .why__item {
   display: flex;
   align-items: center;
-  column-gap: 0.9375rem;
+  column-gap: 1rem;
   padding: 0.9375rem;
   border-radius: 1.25rem;
   color: #303133;
@@ -486,12 +486,13 @@
 }
 .why__text {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.3;
 }
 
 .author {
   padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
 }
 .author__container {
   position: relative;
@@ -707,7 +708,7 @@
   transform: translateX(-50%);
   width: 24.5625rem;
   height: 21.1875rem;
-  background: url(../assets/img/preview/decor-leaves.png) 0 0 no-repeat;
+  background: url(../assets/img/preview/002.png) 0 0 no-repeat;
   background-size: contain;
 }
 .preview__title {
@@ -842,7 +843,7 @@
 .item-program-of-course {
   padding: 1.25rem;
   border-radius: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #FEFDFC;
   display: grid;
   row-gap: 1.25rem;
 }
@@ -993,8 +994,8 @@
 }
 .join__btn {
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 1.125rem;
+  line-height: 1.3;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -1002,13 +1003,13 @@
 }
 .join__btn span {
   padding: 0.59375rem 0.9375rem;
-  background-color: rgba(245, 242, 238, 0.1);
+  background-color: #5A766C;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.4;
   color: #fff;
-  border-radius: 1.25rem;
+  border-radius: 0.625rem;
 }
 
 .item-after-this-course {
@@ -1259,6 +1260,7 @@
   transform: translateY(0);
 }
 .testmonials__title span {
+  color: #3B5A4F;
   display: inline-flex;
   align-items: center;
   column-gap: 0.5rem;
@@ -1309,7 +1311,7 @@
   background-color: #3b5a4f;
   border-radius: 1rem;
   display: grid;
-  row-gap: 0.5rem;
+  row-gap: 0.75rem;
 }
 .slide-testmonials__stars {
   display: flex;
@@ -1471,6 +1473,8 @@
 .guarantee {
   padding-bottom: 1.875rem;
   padding-top: 6.25rem;
+  position: relative;
+  z-index: 1;
 }
 .guarantee__container {
   display: grid;
@@ -1575,12 +1579,13 @@
 }
 .join-the-course__decor {
   position: absolute;
-  z-index: 0;
-  top: -8.125rem;
-  left: -9.375rem;
+  top: -7.5rem;
+  z-index: 2;
+  left: 0;
   width: 300%;
   height: 200%;
-  display: none;
+  width: 49.125rem;
+  height: 37.125rem;
 }
 .join-the-course__title {
   position: relative;
@@ -1603,9 +1608,10 @@
   position: relative;
   z-index: 2;
   display: grid;
-  row-gap: 0.625rem;
+  row-gap: 1rem;
 }
 .join-the-course__timer {
+  margin-top: 0.5rem;
   opacity: 0;
   transform: translateY(1.25rem);
   transition: transform 0.8s, opacity 0.8s;
@@ -1615,6 +1621,7 @@
   transform: translateY(0);
 }
 .join-the-course__labels {
+  margin-bottom: 0.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1725,7 +1732,7 @@
 }
 
 .timer {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #FAF8F5;
   border-radius: 1.25rem;
   padding: 1.25rem;
   display: grid;
@@ -1749,7 +1756,7 @@
   column-gap: 0.25rem;
   align-items: flex-end;
   justify-content: center;
-  background: #f5f2ed;
+  background: #F5F1EA;
   border-radius: 0.75rem;
   padding: 1.25rem 1.5625rem;
 }
@@ -1785,14 +1792,11 @@
 }
 @media (max-width: 29.99875em) {
   .author__img-bg {
-    right: -5rem;
+    right: -5.5rem;
   }
   .item-after-this-course {
     height: 13.125rem;
     width: 100%;
-  }
-  .timer__hours, .timer__minytes, .timer__seconds {
-    padding: 0.625rem 0.625rem;
   }
 }
 @media (max-width: 22.5em) {

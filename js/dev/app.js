@@ -48,3 +48,25 @@ document.addEventListener("DOMContentLoaded", () => {
   updateTimer();
   const timerInterval = setInterval(updateTimer, 1e3);
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const dateElement = document.getElementById("start-date");
+  const today = /* @__PURE__ */ new Date();
+  today.setDate(today.getDate() + 1);
+  const months = [
+    "січня",
+    "лютого",
+    "березня",
+    "квітня",
+    "травня",
+    "червня",
+    "липня",
+    "серпня",
+    "вересня",
+    "жовтня",
+    "листопада",
+    "грудня"
+  ];
+  const day = today.getDate();
+  const month = months[today.getMonth()];
+  dateElement.textContent = `Старт ${day} ${month}`;
+});
