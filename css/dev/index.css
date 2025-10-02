@@ -1577,16 +1577,6 @@
   row-gap: 0.75rem;
   position: relative;
 }
-.join-the-course__decor {
-  position: absolute;
-  top: -7.5rem;
-  z-index: 2;
-  left: 0;
-  width: 300%;
-  height: 200%;
-  width: 49.125rem;
-  height: 37.125rem;
-}
 .join-the-course__title {
   position: relative;
   z-index: 2;
